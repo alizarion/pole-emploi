@@ -62,9 +62,8 @@ export abstract class Partenaire extends Base {
                     headers,
                 }
                 return fetch(url, config).then(r => {
-                    if (r.ok) {
-                        return r.json()
-                    }
+                    if (r.status === 204) { return { resultats: [] }; }
+                    else if (r.ok) { return r.json() }
                     throw new Error(r.statusText)
                 })
 
