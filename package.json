@@ -1,6 +1,6 @@
 {
   "name": "pole-emploi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An universal client for Pole Emploi API written in Typescript",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
